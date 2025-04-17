@@ -1,0 +1,11 @@
+file_format: "1"
+id: blocky
+name: Blocky
+type: shield
+url: https://github.com/RaphCoder13/blocky
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - blocky_left
+  - blocky_right
