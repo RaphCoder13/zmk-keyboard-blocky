@@ -461,8 +461,8 @@
     status = "okay";
 		disable-clicking;
 		tp-sensitivity = <96>;
-		tp-x-invert;
-		tp-y-invert;
+		// tp-x-invert;
+		// tp-y-invert;
 		sampling-rate = <80>;
 };
 #include <input/processors.dtsi>
