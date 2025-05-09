@@ -6,3 +6,6 @@ config SHIELD_BLOCKY_LEFT
 
 config SHIELD_BLOCKY_RIGHT
     def_bool $(shields_list_contains,blocky_right)
+
+config SHIELD_BLOCKY_DONGLE
+    def_bool $(shields_list_contains,blocky_dongle)
