@@ -415,8 +415,8 @@
 
 / {
     mouse_ps2: mouse_ps2 {
-		status = "disabled";
         compatible = "zmk,input-mouse-ps2";
+		status = "disabled";
 
 #ifdef MOUSE_PS2_DRIVER_UART
 	    ps2-device = <&uart_ps2>;
@@ -439,9 +439,9 @@
 };
 &mouse_ps2 {
     status = "okay";
-		disable-clicking;
-		tp-sensitivity = <96>;
-		// tp-x-invert;
-		// tp-y-invert;
-		sampling-rate = <80>;
+    disable-clicking;
+    tp-sensitivity = <96>;
+    // tp-x-invert;
+    // tp-y-invert;
+    sampling-rate = <80>;
 };

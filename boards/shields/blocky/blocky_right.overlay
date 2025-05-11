@@ -7,7 +7,6 @@
 #include "blocky.dtsi"
 #include "tpoint_ps2.dtsi"
 #include <input/processors.dtsi>
-// #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &default_transform {
@@ -41,6 +40,5 @@
 &trackpoint_split {
     device = <&mouse_ps2>;
     status = "okay";
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>, <&zip_temp_layer 1 1000>;
 };
 

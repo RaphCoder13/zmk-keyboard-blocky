@@ -30,7 +30,8 @@ if SHIELD_BLOCKY_RIGHT
 config ZMK_POINTING
     default y
 
-CONFIG_NFCT_PINS_AS_GPIOS=y
+config NFCT_PINS_AS_GPIOS
+    default y
 endif
 
 

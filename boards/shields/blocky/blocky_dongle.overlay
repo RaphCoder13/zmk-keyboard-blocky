@@ -6,15 +6,8 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "blocky.dtsi"
-
-&trackpoint_listener {
-    status = "okay";
-};
-
-&physical_layout0 {
-    transform = <&default_transform>;
-    kscan = <&mock_kscan> ;
-};
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
     chosen {
@@ -29,12 +22,6 @@
         events = <0>;
     };
 
-
-    // physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
-    //     compatible = "zmk,physical-layout";
-    //     display-name = "blocky";
-    //     transform = <&default_transform>; // Label of the matrix transform for this layout
-    // };
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
@@ -52,3 +39,14 @@
         >;
     };
 };
+
+
+&physical_layout0 {
+    transform = <&default_transform>;
+    kscan = <&mock_kscan> ;
+};
+
+&trackpoint_listener {
+    status = "okay";
+};
+
